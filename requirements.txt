@@ -1,0 +1,15 @@
+# Test runner
+pytest==9.0.2
+
+# Relatórios HTML
+pytest-html==4.2.0
+
+# Playwright (API de automação de browser)
+playwright==1.49.0
+
+# Plugins úteis
+pytest-metadata==3.1.1
+
+# Execução paralela (opcional, mas útil)
+pytest-xdist==3.8.0
+

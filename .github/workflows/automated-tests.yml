@@ -27,12 +27,14 @@ jobs:
           pytest tests_certificacao --html=reports/report.html --self-contained-html -v
 
       - name: Upload do relatório HTML
+        if: always() # roda mesmo se o step anterior falhar
         uses: actions/upload-artifact@v4
         with:
           name: pytest-report
           path: reports/report.html
 
       - name: Upload das evidências (screenshots)
+        if: always() # roda mesmo se o step anterior falhar
         uses: actions/upload-artifact@v4
         with:
           name: evidences

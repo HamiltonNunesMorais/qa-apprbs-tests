@@ -1,9 +1,9 @@
 # QA Apprbs Tests
 
-Repositório de testes automatizados para avaliação da qualidade de duas páginas de exemplo:
+Repositório de testes automatizados utilzando Python e Playwright para avaliação da qualidade de uma página de exemplo:
 
 - **Certificação**: https://qualidade.apprbs.com.br/certificacao  
-- **Site**: https://qualidade.apprbs.com.br/site  
+
 
 ---
 

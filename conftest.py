@@ -6,9 +6,9 @@ def playwright():
     with sync_playwright() as p:
         yield p
 
-@pytest.fixture(params=["chromium"]) # , "firefox", "webkit"
+@pytest.fixture(params=["chromium"]) # "firefox", "webkit"
 def browser(playwright, request):
-    browser = getattr(playwright, request.param).launch(headless=False, slow_mo=2000)
+    browser = getattr(playwright, request.param).launch(headless=True, slow_mo=2000)
     yield browser
     browser.close()
 
